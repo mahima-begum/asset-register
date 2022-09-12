@@ -8,6 +8,9 @@ The purpose of this project is for employees to be able to log all IT assets the
 In this web app, users can register accounts if they meet the validation criteria. They can then login and add all assets, and modify existing assets they own. 
 There are existing admin users that can also add and modify assets but have permission to do this for all assets rather than just theirs. In addition to this, they are able to delete assets where necessary. 
 
+Technology:
+This web app has been built with a Python backend using the Django framework for the frontend. Bootstrap has been used to improve the frontend design. 
+
 Registration Page:
 When registering, there is validation on user input to ensure that they enter a unique username, a unique email address, a username less than 15 characters, an alphanumeric username, matching passwords, a password greater than 10 characters, a password with at least 1 number, a password with at least 1 lowercase letter, a password with at least 1 uppercase letter and a password with at least 1 special character (@, #, $ or !).
 
