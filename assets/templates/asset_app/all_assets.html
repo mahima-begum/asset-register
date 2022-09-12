@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>All Assets</title>
+   </head>
+    <body>
+          <br>
+      <div class="container">
+    {%csrf_token%}
+    
+         {% for message in messages %}
+         <div class="alert alert-primary" role="alert">
+            <strong>Message:</strong> {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+         </div>
+         {% endfor %}
+
+
+    <h6>You are logged in as {{ forename }}.</h6>     
+    <h1>Food Alert Asset Manager</h1>
+    <h2>Manage Your Assets</h2>
+            <br>
+
+    {% if user.is_authenticated %}
+        {% if not assets %}
+            <h5>You have no assets. Add assets to view them here.</h5>     
+            <br>
+            <button class="btn"><a href="/add_asset" class="button">Add Asset</a></button>
+            <button class="btn"><a href="/signout" class="button">Log Out</a></button>
+        
+        {% else %}        
+            <button class="btn"><a href="/add_asset" class="button">Add Asset</a></button>
+            <button class="btn"><a href="/signout" class="button">Log Out</a></button>
+            <br>
+            <br>        
+            <table class="table table-bordered">
+                <thead> 
+                <tr> 
+                    <th scope="col"> Name </th>
+                    <th scope="col"> Type </th>
+                    <th scope="col"> Brand </th>
+                    <th scope="col"> Model Number </th>
+                    <th scope="col"> Serial Number </th>
+                    <th scope="col"> Registration Date </th>
+                    <th scope="col"> Warranty </th>
+                    {% if user.is_staff %}
+                        <th> User </th>
+                    {% endif %}                                      
+                    
+                </tr>
+                {% for asset in assets%}
+                    <tr>
+                        <td>{{ asset.name }}</td>
+                        <td>{{ asset.type }}</td>
+                        <td>{{ asset.brand }}</td>
+                        <td>{{ asset.model_number }}</td>
+                        <td>{{ asset.serial_number }}</td>
+                        <td>{{ asset.registration_date }}</td>
+                        <td>{{ asset.warranty }}</td>    
+                        {% if user.is_staff %}
+                            <td>{{ asset.user }}</td>  
+                        {% endif %}                                      
+                        <td>                    
+                            <button class="btn"><a href="{% url 'edit_asset' asset.id %}">Edit</a></button>  
+                        </td>
+                        {% if user.is_staff %}
+                        <td>                    
+                            <button class="btn"><a href="{% url 'delete_asset' asset.id %}">Delete</a></button>  
+                        </td>
+                        {% endif %}
+                            
+                    </tr>
+                {% endfor %}
+                </tr>            
+            </table>        
+            <br>
+        {% endif %}
+    {% endif %}
+
+        <script src="" async defer></script>
+        </div>
+    </body>
+</html>
