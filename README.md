@@ -1,7 +1,7 @@
 # asset-register
 
 Name:
-Asset register
+Asset Register
 
 Descripion:
 The purpose of this project is for employees to be able to log all IT assets they are in possession of, so that the organisation can keep track of this. 
@@ -9,7 +9,9 @@ In this web app, users can register accounts if they meet the validation criteri
 There are existing admin users that can also add and modify assets but have permission to do this for all assets rather than just theirs. In addition to this, they are able to delete assets where necessary. 
 
 Technology:
-This web app has been built with a Python backend using the Django framework for the frontend. Bootstrap has been used to improve the frontend design. 
+This web app has been built with a Python backend using the Django framework for the frontend. Bootstrap has been used to improve the frontend design. This is using a SQLite database primarily with 2 tables: auth_user and asset_app_asset. 
+
+Admin user login credentials: username=asset_superuser; password=Password123!;
 
 Registration Page:
 When registering, there is validation on user input to ensure that they enter a unique username, a unique email address, a username less than 15 characters, an alphanumeric username, matching passwords, a password greater than 10 characters, a password with at least 1 number, a password with at least 1 lowercase letter, a password with at least 1 uppercase letter and a password with at least 1 special character (@, #, $ or !).
