@@ -13,6 +13,10 @@ This web app has been built with a Python backend using the Django framework for
 
 Admin user login credentials: username=asset_superuser; password=Password123!;
 
+--------------------------------------------------------
+
+Page Overview
+
 Registration Page:
 When registering, there is validation on user input to ensure that they enter a unique username, a unique email address, a username less than 15 characters, an alphanumeric username, matching passwords, a password greater than 10 characters, a password with at least 1 number, a password with at least 1 lowercase letter, a password with at least 1 uppercase letter and a password with at least 1 special character (@, #, $ or !).
 
