@@ -1,0 +1,17 @@
+Django (no date) django.contrib.auth | Django documentation | Django. Available at: https://docs.djangoproject.com/en/4.1/ref/contrib/auth/#django.contrib.auth.models.User (accessed 10 October 2022).
+Django (no date) Making queries | Django documentation | Django. Available at: https://docs.djangoproject.com/en/4.1/topics/db/queries/ (accessed 10 October 2022a).
+Django (no date) Model field reference | Django documentation | Django. Available at: https://docs.djangoproject.com/en/4.1/ref/models/fields/#django.db.models.ForeignKey (accessed 10 October 2022).
+Django (no date) Models | Django documentation | Django. Available at: https://docs.djangoproject.com/en/4.1/topics/db/models/#module-django.db.models (accessed 10 October 2022b).
+Django (no date) Using the Django authentication system | Django documentation | Django. Available at: https://docs.djangoproject.com/en/4.1/topics/auth/default/ (accessed 10 October 2022c).
+Django (no date) Working with forms | Django documentation | Django. Available at: https://docs.djangoproject.com/en/4.1/topics/forms/ (accessed 10 October 2022d).
+Django (no date) Writing your first Django app, part 2 | Django documentation | Django. Available at: https://docs.djangoproject.com/en/4.1/intro/tutorial02/ (accessed 10 October 2022e).
+How to Create a Login System in Python Using Django? | Python Projects | GeeksforGeeks (2021) Available at: https://www.youtube.com/watch?v=1UvTNMH7zDo (accessed 10 October 2022).
+Kumar, M. (2017) Answer to ‘python regex for password validation’. Available at: https://stackoverflow.com/a/46582916/12322457 (accessed 10 October 2022).
+Light, S. (2011) Answer to ‘django MultiValueDictKeyError error, how do I deal with it’. Available at: https://stackoverflow.com/a/5895652/12322457 (accessed 10 October 2022).
+MDN Web Docs (no date) <input type="date"> - HTML: HyperText Markup Language | MDN. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date (accessed 10 October 2022).
+Onsem, W. V. (2019) Answer to ‘“BooleanField” object has no attribute “use_required_attribute” in django’. Available at: https://stackoverflow.com/a/56825556/12322457 (accessed 10 October 2022).
+RAJPUT, P. S. (2019) Answer to ‘class has no “objects” member’. Available at: https://stackoverflow.com/a/58255140/12322457 (accessed 10 October 2022).
+SQLite (no date) Datatypes In SQLite. Available at: https://www.sqlite.org/datatype3.html (accessed 10 October 2022).
+Update and Edit Venues - Django Wednesdays #10 (2021) Available at: https://www.youtube.com/watch?v=jCM-m_3Ysqk (accessed 10 October 2022).
+W3Schools (no date) HTML select tag. Available at: https://www.w3schools.com/tags/tag_select.asp (accessed 10 October 2022).
+W3Schools (no date) HTML Table Borders. Available at: https://www.w3schools.com/html/html_table_borders.asp (accessed 10 October 2022).
