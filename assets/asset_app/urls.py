@@ -2,6 +2,9 @@ from django.contrib import admin
 from django.urls import path, include
 from . import views
 
+# References
+# How to Create a Login System in Python Using Django? | Python Projects | GeeksforGeeks (2021) Available at: https://www.youtube.com/watch?v=1UvTNMH7zDo (accessed 10 October 2022).
+
 urlpatterns = [
     path('', views.home, name="home"),
     path('register', views.register, name="register"),

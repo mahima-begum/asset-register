@@ -13,6 +13,16 @@ from asset_app.forms import AssetForm
 import re
 import datetime
 
+# References
+# Django (no date) django.contrib.auth | Django documentation | Django. Available at: https://docs.djangoproject.com/en/4.1/ref/contrib/auth/#django.contrib.auth.models.User (accessed 10 October 2022).
+# Django (no date) Making queries | Django documentation | Django. Available at: https://docs.djangoproject.com/en/4.1/topics/db/queries/ (accessed 10 October 2022).
+# Django (no date) Using the Django authentication system | Django documentation | Django. Available at: https://docs.djangoproject.com/en/4.1/topics/auth/default/ (accessed 10 October 2022b).
+# Django (no date) Working with forms | Django documentation | Django. Available at: https://docs.djangoproject.com/en/4.1/topics/forms/ (accessed 10 October 2022d).
+# How to Create a Login System in Python Using Django? | Python Projects | GeeksforGeeks (2021) Available at: https://www.youtube.com/watch?v=1UvTNMH7zDo (accessed 10 October 2022).
+# Kumar, M. (2017) Answer to ‘python regex for password validation’. Available at: https://stackoverflow.com/a/46582916/12322457 (accessed 10 October 2022).
+# Light, S. (2011) Answer to ‘django MultiValueDictKeyError error, how do I deal with it’. Available at: https://stackoverflow.com/a/5895652/12322457 (accessed 10 October 2022).
+# RAJPUT, P. S. (2019) Answer to ‘class has no “objects” member’. Available at: https://stackoverflow.com/a/58255140/12322457 (accessed 10 October 2022).
+
 # Create your views here.
 def home(request):
     return render(request, "asset_app/signin.html")

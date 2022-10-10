@@ -6,6 +6,12 @@ from django import forms
 from django.forms import ModelForm
 from .models import Asset
 
+# References
+# Onsem, W. V. (2019) Answer to ‘“BooleanField” object has no attribute “use_required_attribute” in django’. Available at: https://stackoverflow.com/a/56825556/12322457 (accessed 10 October 2022).
+# SQLite (no date) Datatypes In SQLite. Available at: https://www.sqlite.org/datatype3.html (accessed 10 October 2022).
+# Update and Edit Venues - Django Wednesdays #10 (2021) Available at: https://www.youtube.com/watch?v=jCM-m_3Ysqk (accessed 10 October 2022).
+
+
 class AssetForm(ModelForm):
     class Meta:
         model = Asset

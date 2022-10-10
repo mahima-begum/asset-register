@@ -1,6 +1,13 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+# References
+# Django (no date) Model field reference | Django documentation | Django. Available at: https://docs.djangoproject.com/en/4.1/ref/models/fields/#django.db.models.ForeignKey (accessed 10 October 2022).
+# Django (no date) Models | Django documentation | Django. Available at: https://docs.djangoproject.com/en/4.1/topics/db/models/#module-django.db.models (accessed 10 October 2022b).
+# Django (no date) Writing your first Django app, part 2 | Django documentation | Django. Available at: https://docs.djangoproject.com/en/4.1/intro/tutorial02/ (accessed 10 October 2022c).
+# SQLite (no date) Datatypes In SQLite. Available at: https://www.sqlite.org/datatype3.html (accessed 10 October 2022).
+
+
 # Create your models here.
 class Asset(models.Model):
     id = models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')
